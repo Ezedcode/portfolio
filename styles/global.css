@@ -1,0 +1,26 @@
+:root {
+  --color0: #ffff;
+  --color1: #1f2667;
+  --color2: #45e696;
+  --color3: #ff0000;
+  --color4: #ffc400;
+  --color5: #0000ff;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-weight: bold;
+  font-family: "Concert One", cursive;
+  overflow: hidden;
+}
+
+li {
+  margin: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}

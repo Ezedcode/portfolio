@@ -1,0 +1,36 @@
+.nav {
+  display: flex;
+}
+
+.nav a {
+  color: var(--color1);
+  padding-left: 20px;
+  letter-spacing: 2px;
+  transition: 0.2s;
+}
+
+.nav a:hover {
+  color: var(--color2);
+}
+
+@media screen and (max-width: 675px) {
+  .nav {
+    width: 100vw;
+    height: 95vh;
+    position: absolute;
+    top: 10vh;
+    right: -100%;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color5);
+    transition: 0.5s;
+  }
+
+  .nav.active {
+    right: 0;
+  }
+
+  .nav a {
+    padding-left: 0px;
+  }
+}

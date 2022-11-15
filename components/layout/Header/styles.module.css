@@ -1,0 +1,15 @@
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: var(--color0);
+}
+
+.header > div {
+  width: 90%;
+  height: 10vh;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
