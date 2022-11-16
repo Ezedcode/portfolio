@@ -6,7 +6,7 @@ const Tag = (props) => {
     <div className={`${styles.tag} ${props.active && styles.active}`}>
       <span>{"<"}</span>
       {props.page}
-      <span>{" /"}</span>
+      <span>{"/"}</span>
       <span>{">"}</span>
     </div>
   );

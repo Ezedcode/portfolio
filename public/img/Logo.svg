@@ -1,0 +1,96 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 66 55" width="66" height="55">
+	<title>logo-svg</title>
+	<defs>
+		<image  width="53" height="44" id="img1" href="data:image/png;base64,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"/>
+	</defs>
+	<style>
+		tspan { white-space:pre } 
+		.t0 { font-size: 12px;fill: #ff0000;font-weight: 400;font-family: "DejaVuSans", "DejaVu Sans" } 
+		.t1 { font-size: 12px;fill: #ffff00;font-weight: 400;font-family: "DejaVuSans", "DejaVu Sans" } 
+		.t2 { font-size: 12px;fill: #0000ff;font-weight: 400;font-family: "DejaVuSans", "DejaVu Sans" } 
+		.s3 { fill: #000000 } 
+	</style>
+	<use id="Background" href="#img1" x="10" y="3"/>
+	<text id="&lt;/&gt;" style="transform: matrix(1,0,0,1,10,30.044)" >
+		<tspan x="0" y="0" class="t0">&lt;</tspan><tspan  y="0" class="t1">/</tspan><tspan  y="0" class="t2">&gt;</tspan><tspan  y="0" class="t2">
+</tspan>
+	</text>
+	<path id="Shape 1" class="s3" d="m9 19h1v15h-1z"/>
+	<path id="Shape 2" class="s3" d="m9 19h24v1h-24z"/>
+	<path id="Shape 3" class="s3" d="m9 34h26v1h-26z"/>
+	<path id="Shape 4" class="s3" d="m34 20h1v15h-1z"/>
+	<path id="Shape 5" class="s3" d="m33 19h2v1h-2z"/>
+	<path id="Shape 6" class="s3" d="m25 4h1v15h-1z"/>
+	<path id="Shape 7" class="s3" d="m26 4h1v3h-1z"/>
+	<path id="Shape 8" class="s3" d="m27 4h1v2h-1z"/>
+	<path id="Shape 9" class="s3" d="m28 4h1v1h-1z"/>
+	<path id="Shape 10" class="s3" d="m25 35h1v8h-1z"/>
+	<path id="Shape 11" class="s3" d="m25 43h1v3h-1z"/>
+	<path id="Shape 12" class="s3" d="m25 45h4v1h-4z"/>
+	<path id="Shape 13" class="s3" d="m26 44h1v1h-1z"/>
+	<path id="Shape 14" class="s3" d="m26 43h1v1h-1z"/>
+	<path id="Shape 15" class="s3" d="m27 44h1v1h-1z"/>
+	<path id="Shape 16" class="s3" d="m29 45h1v1h-1z"/>
+	<path id="Shape 17" class="s3" d="m58 45h1v1h-1z"/>
+	<path id="Shape 18" class="s3" d="m59 45h1v1h-1z"/>
+	<path id="Shape 19" class="s3" d="m60 45h1v1h-1z"/>
+	<path id="Shape 20" class="s3" d="m60 44h1v1h-1z"/>
+	<path id="Shape 21" class="s3" d="m61 42h1v4h-1z"/>
+	<path id="Shape 22" class="s3" d="m58 4h5v1h-5z"/>
+	<path id="Shape 23" class="s3" d="m62 4h1v42h-1z"/>
+	<path id="Shape 24" class="s3" d="m59 5h3v1h-3z"/>
+	<path id="Shape 25" class="s3" d="m61 6h1v1h-1z"/>
+	<path id="Shape 26" class="s3" d="m37 38h18v1h-18z"/>
+	<path id="Shape 27" class="s3" d="m36 38h1v1h-1z"/>
+	<path id="Shape 28" class="s3" d="m36 12h1v27h-1z"/>
+	<path id="Shape 29" class="s3" d="m36 12h20v1h-20z"/>
+	<path id="Shape 30" class="s3" d="m55 13h1v6h-1z"/>
+	<path id="Shape 31" class="s3" d="m43 18h12v1h-12z"/>
+	<path id="Shape 32" class="s3" d="m43 18h1v4h-1z"/>
+	<path id="Shape 33" class="s3" d="m43 22h10v1h-10z"/>
+	<path id="Shape 34" class="s3" d="m52 22h1v7h-1z"/>
+	<path id="Shape 35" class="s3" d="m42 28h11v1h-11z"/>
+	<path id="Shape 36" class="s3" d="m42 29h1v3h-1z"/>
+	<path id="Shape 37" class="s3" d="m42 31h13v1h-13z"/>
+	<path id="Shape 38" class="s3" d="m54 31h2v1h-2z"/>
+	<path id="Shape 39" class="s3" d="m55 32h1v7h-1z"/>
+	<path id="Shape 40" class="s3" d="m22 21h1v1h-1z"/>
+	<path id="Shape 41" class="s3" d="m21 22h1v1h-1z"/>
+	<path id="Shape 42" class="s3" d="m21 23h1v2h-1z"/>
+	<path id="Shape 43" class="s3" d="m21 25h1v1h-1z"/>
+	<path id="Shape 44" class="s3" d="m22 22h1v1h-1z"/>
+	<path id="Shape 45" class="s3" d="m23 23h1v1h-1z"/>
+	<path id="Shape 46" class="s3" d="m23 24h1v1h-1z"/>
+	<path id="Shape 47" class="s3" d="m23 25h1v3h-1z"/>
+	<path id="Shape 48" class="s3" d="m22 27h1v1h-1z"/>
+	<path id="Shape 49" class="s3" d="m22 28h1v3h-1z"/>
+	<path id="Shape 50" class="s3" d="m21 30h1v1h-1z"/>
+	<path id="Shape 51" class="s3" d="m20 31h2v1h-2z"/>
+	<path id="Shape 52" class="s3" d="m20 28h1v1h-1z"/>
+	<path id="Shape 53" class="s3" d="m11 25h1v1h-1z"/>
+	<path id="Shape 54" class="s3" d="m11 24h3v1h-3z"/>
+	<path id="Shape 55" class="s3" d="m14 23h2v1h-2z"/>
+	<path id="Shape 56" class="s3" d="m16 23h1v1h-1z"/>
+	<path id="Shape 57" class="s3" d="m18 24h1v1h-1z"/>
+	<path id="Shape 58" class="s3" d="m15 25h1v1h-1z"/>
+	<path id="Shape 59" class="s3" d="m11 27h2v1h-2z"/>
+	<path id="Shape 60" class="s3" d="m14 28h2v1h-2z"/>
+	<path id="Shape 61" class="s3" d="m17 29h2v1h-2z"/>
+	<path id="Shape 62" class="s3" d="m25 22h3v1h-3z"/>
+	<path id="Shape 63" class="s3" d="m27 23h1v1h-1z"/>
+	<path id="Shape 64" class="s3" d="m30 24h1v1h-1z"/>
+	<path id="Shape 65" class="s3" d="m31 24h2v1h-2z"/>
+	<path id="Shape 66" class="s3" d="m31 27h2v1h-2z"/>
+	<path id="Shape 67" class="s3" d="m28 28h2v1h-2z"/>
+	<path id="Shape 68" class="s3" d="m25 29h3v1h-3z"/>
+	<path id="Shape 69" class="s3" d="m24 27h3v1h-3z"/>
+	<path id="Shape 70" class="s3" d="m27 26h3v1h-3z"/>
+	<path id="Shape 71" class="s3" d="m27 25h2v1h-2z"/>
+	<path id="Shape 72" class="s3" d="m28 23h2v1h-2z"/>
+	<path id="Shape 73" class="s3" d="m14 26h1v1h-1z"/>
+	<path id="Shape 74" class="s3" d="m17 27h3v1h-3z"/>
+	<path id="Shape 75" class="s3" d="m19 27h1v2h-1z"/>
+	<path id="Shape 76" class="s3" d="m19 28h1v2h-1z"/>
+	<path id="Shape 77" class="s3" d="m29 17h1v3h-1z"/>
+	<path id="Shape 78" class="s3" d="m29 34h1v8h-1z"/>
+</svg>

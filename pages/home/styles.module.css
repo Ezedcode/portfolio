@@ -5,12 +5,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--color1);
 }
 
 .home h1 {
   font-size: 40px;
   font-family: "Play", sans-serif;
+}
+
+.home p {
+  width: 420px;
 }
 
 .home > div:last-child {
@@ -20,6 +23,10 @@
   display: flex;
   margin-left: 60px;
   justify-content: space-between;
+}
+
+.home img {
+  width: 100%;
 }
 
 .home > div:last-child > div:first-child,
@@ -74,12 +81,60 @@
 @keyframes circle {
   0%,
   100% {
-    top: 13rem;
-    right: 0rem;
+    top: 83%;
+    right: 0%;
+    left: 63%;
   }
 
   50% {
-    top: 9rem;
-    right: -5rem;
+    top: 63%;
+    right: -22%;
+    left: 87%;
+  }
+}
+
+@media (max-width: 884px){
+  .home {
+    text-align: center;
+    flex-direction: column-reverse;
+  }
+
+  .home > div:last-child {
+    margin-left: 0px;
+  }
+
+  .home > div:last-child {
+    width: 200px;
+    height: 200px;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+
+  .home > div:last-child div:first-child,
+  .home > div:last-child div:last-child {
+    width: 5rem;
+    height: 5rem;
+  }
+}
+
+@media (max-width: 420px){
+
+  .home > div:last-child {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  .home > div:first-child {
+    margin: 0 auto;
+    width: 275px;
+  }
+
+  .home h1 {
+    font-size: 26px;
+  }
+
+  .home p {
+    width: 100%;
   }
 }

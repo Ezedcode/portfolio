@@ -1,5 +1,5 @@
 :root {
-  --color0: #ffff;
+  --color0: rgb(152, 214, 235);
   --color1: #1f2667;
   --color2: #45e696;
   --color3: #ff0000;
@@ -11,8 +11,9 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-weight: bold;
+  color: #ffff;
   font-family: "Concert One", cursive;
+  background-color: var(--color1);
   overflow: hidden;
 }
 
