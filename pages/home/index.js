@@ -15,7 +15,7 @@ const HomePage = () => {
       <div>
         <div></div>
         <div>
-          <img src="./img/ezedelio.png" alt="Ezedélio"  />
+          <img src="./img/ezedelio.png" alt="Ezedélio" />
         </div>
         <div></div>
       </div>
