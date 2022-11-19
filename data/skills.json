@@ -1,0 +1,14 @@
+{
+  "Myself": "About Me",
+
+  "content": {
+    "p1": "Hi! I'm Ezedélio Garcia and I love building things for the internet. My interest in web development started in 2021 when I was looking for a technology to focus on when someone suggested me to try web development and there I went to do some research and fell in love with it so I started studying HTML and CSS!",
+
+    "p2": "Today I'm looking for an opportunity to apply what I've learned since I entered the world of web development."
+  },
+
+  "abilities": {
+    "p3": "Here are some technologies I've been interacting with in my personal projects:",
+    "technologies": ["HTML", "CSS", "JavaScript", "React", "Node.js", "Next.js"]
+  }
+}

@@ -1,3 +1,13 @@
 .skills {
+  height: 90vh;
   margin-top: 10vh;
+  text-align: justify;
+  background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.skills div {
+  width: 45%;
 }
