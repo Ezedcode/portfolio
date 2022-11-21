@@ -1,7 +1,7 @@
 import React from "react";
-import MenuBtn from "../../button/MenuBtn";
-import Logo from "../../Logo";
-import NavBar from "../../NavBar";
+import MenuBtn from "../button/MenuBtn";
+import Logo from "../Logo";
+import NavBar from "../NavBar";
 import styles from "./styles.module.css";
 
 const Header = () => {

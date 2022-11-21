@@ -1,7 +1,5 @@
 .home {
   color: #ffff;
-  height: 90vh;
-  margin-top: 10vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -9,7 +7,6 @@
 
 .home h1 {
   font-size: 40px;
-  font-family: "Play", sans-serif;
 }
 
 .home p {
@@ -93,7 +90,7 @@
   }
 }
 
-@media (max-width: 884px){
+@media (max-width: 884px) {
   .home {
     text-align: center;
     flex-direction: column-reverse;
@@ -106,10 +103,9 @@
   .home > div:last-child {
     width: 200px;
     height: 200px;
-    margin-top: 3rem;
+    margin-top: 5rem;
     margin-bottom: 1rem;
   }
-  
 
   .home > div:last-child div:first-child,
   .home > div:last-child div:last-child {
@@ -118,10 +114,8 @@
   }
 }
 
-@media (max-width: 420px){
-
+@media (max-width: 420px) {
   .home > div:last-child {
-    margin-top: 3rem;
     margin-bottom: 2rem;
   }
 

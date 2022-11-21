@@ -3,10 +3,11 @@ import React from "react";
 import skills from "../../data/skills.json";
 
 import styles from "./styles.module.css";
+import page from "../../styles/pages.module.css"
 
 const Skills = () => {
   return (
-    <div className={styles.skills}>
+    <div className={`${styles.skills} ${page.pages}`}>
       <div>
         <h1>{skills.Myself}</h1>
         <p>{skills.content.p1}</p>
@@ -20,7 +21,7 @@ const Skills = () => {
             <li>{skills.abilities.technologies[index]}</li>))}
         </ul>
       </div>
-    </div>
+    </div >
   );
 };
 

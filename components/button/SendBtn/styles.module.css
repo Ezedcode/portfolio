@@ -1,0 +1,18 @@
+.sendBtn {
+  margin-top: 20px;
+  border-radius: 5px;
+  width: 8rem;
+  border: none;
+  padding: 15px 0;
+  font-weight: bolder;
+  align-self: end;
+  cursor: pointer;
+  transition: 0.5s;
+  font-size: 16px;
+  background: var(--color2);
+  font-family: "Play", sans-serif;
+}
+
+.sendBtn:hover {
+  background: #45dbe6;
+}

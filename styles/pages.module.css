@@ -1,0 +1,22 @@
+.pages {
+  color: var(--color0);
+  height: 100%;
+  margin-top: 10vh;
+  animation: animation 1s linear;
+}
+
+@keyframes animation {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@media (min-width: 885px) {
+  .pages {
+    height: 90vh;
+  }
+}

@@ -14,7 +14,11 @@ body {
   color: #ffff;
   font-family: "Concert One", cursive;
   background-color: var(--color1);
-  overflow: hidden;
+}
+
+h1 {
+  font-family: "Play", sans-serif;
+  color: var(--color2);
 }
 
 li {

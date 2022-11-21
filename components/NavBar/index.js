@@ -6,7 +6,7 @@ import styles from "./styles.module.css";
 import Tag from "../Tag";
 
 const NavBar = () => {
-  const { menuBtn } = useContext(GlobalVar);
+  const { menuBtn, setMenuBtn } = useContext(GlobalVar);
 
   const [page, setHomePage] = useState([true, false, false, false]);
 
@@ -16,6 +16,7 @@ const NavBar = () => {
         <div
           onClick={() => {
             setHomePage([true, false, false, false]);
+            setMenuBtn(false);
           }}
         >
           <Tag page="Home" active={page[0]} />
@@ -25,6 +26,7 @@ const NavBar = () => {
         <div
           onClick={() => {
             setHomePage([false, true, false, false]);
+            setMenuBtn(false);
           }}
         >
           <Tag page="Skills" active={page[1]} />
@@ -34,6 +36,7 @@ const NavBar = () => {
         <div
           onClick={() => {
             setHomePage([false, false, true, false]);
+            setMenuBtn(false);
           }}
         >
           <Tag page="Projects" active={page[2]} />
@@ -43,6 +46,7 @@ const NavBar = () => {
         <div
           onClick={() => {
             setHomePage([false, false, false, true]);
+            setMenuBtn(false);
           }}
         >
           <Tag page="Contact" active={page[3]} />

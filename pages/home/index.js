@@ -3,10 +3,11 @@ import React from "react";
 import home from "../../data/home.json";
 
 import styles from "./styles.module.css";
+import page from "../../styles/pages.module.css"
 
 const HomePage = () => {
   return (
-    <div className={styles.home}>
+    <div className={`${styles.home} ${page.pages}`}>
       <div>
         <p>{home.greeting}👋</p>
         <h1>{home.title}</h1>
@@ -19,7 +20,7 @@ const HomePage = () => {
         </div>
         <div></div>
       </div>
-    </div>
+    </div >
   );
 };
 
