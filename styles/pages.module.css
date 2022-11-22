@@ -1,21 +1,17 @@
 .pages {
   color: var(--color0);
-  height: 100%;
   margin-top: 10vh;
-  animation: animation 1s linear;
+  animation: animation 0.7s linear;
 }
 
 @keyframes animation {
   from {
     opacity: 0;
-  }
-
-  to {
-    opacity: 1;
+    margin-top: -50%;
   }
 }
 
-@media (min-width: 885px) {
+@media (min-width: 884px) {
   .pages {
     height: 90vh;
   }
