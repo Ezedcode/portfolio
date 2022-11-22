@@ -8,11 +8,22 @@ import SendBtn from "../../components/button/SendBtn";
 
 const Contact = () => {
 
-  async function handleSubmit(e) {
+  async function handleOnSubmit(e) {
     e.preventDefault();
     const formData = {};
 
-    Array.form(e.currentTarget.elements);
+    Array.from(e.currentTarget.elements).forEach(field => {
+      if (!field) return;
+
+      formData[field.name] = field.value;
+    })
+
+    fetch('/api/mail', {
+      method: 'post',
+      body: JSON.stringify(formData)
+    })
+
+    console.log(formData);
   }
 
   return (
@@ -21,11 +32,11 @@ const Contact = () => {
         <h1>{contact.title}</h1>
         <p>{contact.content}</p>
       </div>
-      <form method="post" onSubmit={handleSubmit}>
-        <input type="text" placeholder="Name" />
-        <input type="email" placeholder="Email" />
+      <form method="post" onSubmit={handleOnSubmit}>
+        <input type="text" placeholder="Name" name="name" />
+        <input type="email" placeholder="Email" name="email" />
 
-        <textarea placeholder="Message" />
+        <textarea placeholder="Message" name="message" />
         <SendBtn />
       </form>
     </div>
