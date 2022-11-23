@@ -1,10 +1,12 @@
 .logo {
-    border-radius: 10px;
-    box-shadow: 0px 0px 5px 1px var(--color1);
-    transition: .5s;
+  font-size: 20px;
+  font-weight: bolder;
+  padding-right: 10px;
+  border-radius: 100%;
+  box-shadow: 2px 2px 0px 1px var(--color3);
+  transition: 0.5s;
 }
 
 .logo:hover {
-    border-radius: 10px;
-    box-shadow: 0px 0px 5px 1px var(--color4);
+  box-shadow: 2px 2px 0px 1px var(--color4);
 }
