@@ -5,6 +5,7 @@ import GlobalVar from "../context/GlobalVar";
 import Header from "../components/Header";
 import { useState, useEffect } from "react";
 import Loading from "../components/Loading";
+import SocialMedia from "../components/SocialMedia";
 
 function MyApp({ Component, pageProps }) {
   const [menuBtn, setMenuBtn] = useState(false);
@@ -33,6 +34,7 @@ function MyApp({ Component, pageProps }) {
     >
       <Component {...pageProps} />
       <Header />
+      <SocialMedia />
     </GlobalVar.Provider>
   );
 }

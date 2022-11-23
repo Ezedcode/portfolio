@@ -7,12 +7,10 @@ import page from "../../styles/pages.module.css"
 import SendBtn from "../../components/button/SendBtn";
 
 const Contact = () => {
-
-  //const nodemailer = require("nodemailer");
+  const formData = {};
 
   async function handleOnSubmit(e) {
     e.preventDefault();
-    const formData = {};
 
     Array.from(e.currentTarget.elements).forEach(field => {
       if (!field) return;
@@ -20,38 +18,12 @@ const Contact = () => {
       formData[field.name] = field.value;
     })
 
-    fetch('/api/mail', {
-      method: 'post',
+    fetch('/api/contact', {
+      method: 'POST',
       body: JSON.stringify(formData)
     })
   }
 
-  /*async function main() {
-    console.log(formData);
-
-    let transporter = await nodemailer.createTestAccount({
-      host: "smtp.ethereal.email",
-      port: 587,
-      secure: false,
-      auth: {
-        user: testAccount.user,
-        pass: testAccount.pass,
-      },
-    });
-
-    let info = await transporter.sendMail({
-      from: '"Company" <dinog165@gmail.com>',
-      to: "ezedeliogarcia@gmail.com",
-      subject: "Hello",
-      text: "Hello world!",
-      html: "<b>Hello world?</b>",
-    })
-
-    console.log("Message sent: %s", info.massageId);
-
-    console.log("Preview URL: %s", nodemailer.getTestMessageUrl(info));
-  }
-*/
   return (
     <div className={`${styles.contact} ${page.pages}`}>
       <div>
@@ -61,6 +33,7 @@ const Contact = () => {
       <form method="post" onSubmit={handleOnSubmit}>
         <input type="text" placeholder="Name" name="name" />
         <input type="email" placeholder="Email" name="email" />
+        <input type="text" placeholder="Subject" name="subject" />
 
         <textarea placeholder="Message" name="message" />
         <SendBtn />
