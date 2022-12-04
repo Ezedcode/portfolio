@@ -8,14 +8,30 @@ import Tag from "../Tag";
 const NavBar = () => {
   const { menuBtn, setMenuBtn } = useContext(GlobalVar);
 
-  const [page, setHomePage] = useState([true, false, false, false]);
+  const page = [true, false, false, false];
+
+  const locationUrl = window.location.href.toString();
+
+  const pagesUrl = [
+    "http://localhost:3000/",
+    "http://localhost:3000/skills",
+    "http://localhost:3000/project",
+    "http://localhost:3000/contact"
+  ];
+
+  pagesUrl.forEach((element, index) => {
+    if (element === locationUrl) {
+      page[index] = true;
+    } else {
+      page[index] = false;
+    }
+  });
 
   return (
     <nav className={`${styles.nav} ${menuBtn && styles.active}`}>
       <Link href="/">
         <div
           onClick={() => {
-            setHomePage([true, false, false, false]);
             setMenuBtn(false);
           }}
         >
@@ -25,7 +41,6 @@ const NavBar = () => {
       <Link href="/skills">
         <div
           onClick={() => {
-            setHomePage([false, true, false, false]);
             setMenuBtn(false);
           }}
         >
@@ -35,7 +50,6 @@ const NavBar = () => {
       <Link href="/project">
         <div
           onClick={() => {
-            setHomePage([false, false, true, false]);
             setMenuBtn(false);
           }}
         >
@@ -45,7 +59,6 @@ const NavBar = () => {
       <Link href="/contact">
         <div
           onClick={() => {
-            setHomePage([false, false, false, true]);
             setMenuBtn(false);
           }}
         >

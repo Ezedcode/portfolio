@@ -1,27 +1,30 @@
 .grid {
   height: 15rem;
-  border: 1px solid var(--color3);
   border-radius: 10px;
+  border: 1px solid #2a369ebe;
+  box-shadow: 1px 1px 1px 1px #2a369ebe;
   cursor: pointer;
   display: flex;
   align-items: end;
   justify-content: end;
+  background-color: #2a369e;
   transition: 0.5s;
 }
 
 .grid:hover {
-  border-color: aqua;
+  box-shadow: none;
+  border: 1px solid #00ffff;
+  transition: 0.5s;
 }
 
 .view {
-  font-family: "Play", sans-serif;
   font-weight: bolder;
   letter-spacing: 3px;
   font-size: 20px;
   padding: 10px;
   color: var(--color2);
   opacity: 0;
-  transition: 1s;
+  transition: 0.5s;
 }
 
 .grid:hover .view {
@@ -44,6 +47,6 @@
 
 @media (max-width: 420px) {
   .grid {
-    margin: 0 20px;
+    margin: 0 10px;
   }
 }
