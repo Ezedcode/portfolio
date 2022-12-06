@@ -12,6 +12,9 @@ const Grid = (props) => {
 
     return (
         <div className={`${styles.grid} ${activeGrid ? styles.active : ""}`} onClick={handleActive}>
+            <div className={styles.project}>
+                <img src={props.src} />
+            </div>
             <div className={styles.view}>View</div>
         </div >
     );

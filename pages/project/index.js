@@ -1,28 +1,23 @@
 import React from "react";
 
-import styles from "./styles.module.css";
-import page from "../../styles/pages.module.css"
 import Grid from "./grid";
 
+import projects from "../../data/projects.json";
+import { Container, Project } from "./styles";
+
 const Projects = () => {
-  return <div className={`${styles.projects} ${page.pages}`}>
-    <Grid />
-    <Grid />
-    <Grid />
-    <Grid />
-    <Grid />
-    <Grid />
-    <Grid />
-    <Grid />
-    <Grid />
-    <Grid />
-    <Grid />
-    <Grid />
-    <Grid />
-    <Grid />
-    <Grid />
-    <Grid />
-  </div>;
+  return (
+    <Container>
+      {
+        projects.map((project, index) => {
+          // eslint-disable-next-line react/jsx-key
+          return (<Project secund={`${index * 0.2}`}>
+            <Grid src={project} />
+          </Project>)
+        })
+      }
+    </Container>
+  );
 };
 
 export default Projects;
