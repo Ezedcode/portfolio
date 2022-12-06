@@ -11,7 +11,7 @@ const Projects = () => {
       {
         projects.map((project, index) => {
           // eslint-disable-next-line react/jsx-key
-          return (<Project secund={`${index * 0.2}`}>
+          return (<Project secund={`${index * 0.5}`}>
             <Grid src={project} />
           </Project>)
         })
