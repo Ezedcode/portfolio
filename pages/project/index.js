@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/Link";
 
 import Grid from "./grid";
 
@@ -12,7 +13,9 @@ const Projects = () => {
         projects.map((project, index) => {
           // eslint-disable-next-line react/jsx-key
           return (<Project secund={`${index * 0.5}`}>
-            <Grid src={project} />
+            <Link href={project.toString()} target="_blank" >
+              <Grid src={`img/projects/${index + 1}.gif`} />
+            </Link>
           </Project>)
         })
       }
