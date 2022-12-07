@@ -12,7 +12,6 @@ export const Project = styled.div`
 `;
 
 export const Container = styled.div`
-  margin-top: 14vh;
   padding: 10px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -28,3 +27,17 @@ export const Container = styled.div`
     gap: 10px;
   }
 `
+
+export const Main = styled.div`
+  margin-top: 10vh;
+
+  @media (min-width: 1055px) {
+    @media (min-height: 582px) {
+      height: 90vh;
+      display: flex;
+      flex-direction: column;
+      align-item: center;
+      justify-content: center;
+    }
+  }
+`;

@@ -1,6 +1,6 @@
 .grid {
   position: relative;
-  height: 15rem;
+  height: 17rem;
   border-radius: 10px;
   border: 2px solid #2a369ebe;
   box-shadow: 1px 1px 1px 1px #2a369ebe;
@@ -48,6 +48,10 @@
 }
 
 @media (max-width: 1055px) {
+  .grid {
+    height: 15rem;
+  }
+
   .active {
     border-color: aqua;
   }
