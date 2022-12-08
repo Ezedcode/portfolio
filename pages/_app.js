@@ -20,7 +20,7 @@ function MyApp({ Component, pageProps }) {
         setIsDocumentReady(true);
       }
     }, 7 * 1000);
-  }, []);
+  }, [isDocumentReady]);
 
   if (!isDocumentReady)
     return (

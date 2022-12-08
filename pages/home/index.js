@@ -10,6 +10,7 @@ const HomePage = () => {
   const { setStatusPage } = useContext(GlobalVar);
 
   setStatusPage(1);
+
   return (
     <div className={`${styles.home} ${page.pages}`}>
       <div>
@@ -20,7 +21,8 @@ const HomePage = () => {
       <div>
         <div></div>
         <div>
-          <img src="./img/ezedelio.png" alt="Ezedélio" />
+          {// eslint-disable-next-line @next/next/no-img-element
+            <img src="./img/ezedelio.png" alt="Ezedélio" />}
         </div>
         <div></div>
       </div>
