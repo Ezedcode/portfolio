@@ -14,12 +14,9 @@ function MyApp({ Component, pageProps }) {
   const [isDocumentReady, setIsDocumentReady] = useState(false);
 
   useEffect(() => {
-
-    setTimeout(() => {
-      if (!isDocumentReady) {
-        setIsDocumentReady(true);
-      }
-    }, 7 * 1000);
+    if (!isDocumentReady) {
+      setIsDocumentReady(true);
+    }
   }, [isDocumentReady]);
 
   if (!isDocumentReady)

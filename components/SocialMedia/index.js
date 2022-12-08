@@ -1,7 +1,6 @@
 import React from "react";
 
 import { FaLinkedin, FaGithub } from "react-icons/fa";
-import Link from "next/Link";
 
 import styles from "./styles.module.css";
 
@@ -9,12 +8,12 @@ const SocialMedia = () => {
 
     return (
         <div className={styles.socialMedia}>
-            <Link href="https://www.linkedin.com/in/ezed%C3%A9lio-garcia-61a9b622a/" target="_blank">
+            <a href="https://www.linkedin.com/in/ezed%C3%A9lio-garcia-61a9b622a/" target="_blank" rel="noreferrer" >
                 <FaLinkedin />
-            </Link>
-            <Link href="https://github.com/Ezedcode" target="_blank">
+            </a>
+            <a href="https://github.com/Ezedcode" target="_blank" rel="noreferrer">
                 <FaGithub />
-            </Link>
+            </a>
         </div>
     );
 }

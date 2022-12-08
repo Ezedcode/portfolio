@@ -1,5 +1,4 @@
 import React, { useContext } from "react";
-import Link from "next/Link";
 import GlobalVar from "../../context/GlobalVar";
 
 import styles from "./styles.module.css";
@@ -20,7 +19,7 @@ const NavBar = () => {
 
   return (
     <nav className={`${styles.nav} ${menuBtn && styles.active}`}>
-      <Link href="/">
+      <a href="/">
         <div
           onClick={() => {
             setMenuBtn(false);
@@ -28,8 +27,8 @@ const NavBar = () => {
         >
           <Tag page="Home" active={page[0]} />
         </div>
-      </Link>
-      <Link href="/skills">
+      </a>
+      <a href="/skills">
         <div
           onClick={() => {
             setMenuBtn(false);
@@ -37,8 +36,8 @@ const NavBar = () => {
         >
           <Tag page="Skills" active={page[1]} />
         </div>
-      </Link>
-      <Link href="/project">
+      </a>
+      <a href="/project">
         <div
           onClick={() => {
             setMenuBtn(false);
@@ -46,8 +45,8 @@ const NavBar = () => {
         >
           <Tag page="Projects" active={page[2]} />
         </div>
-      </Link>
-      <Link href="/contact">
+      </a>
+      <a href="/contact">
         <div
           onClick={() => {
             setMenuBtn(false);
@@ -55,12 +54,12 @@ const NavBar = () => {
         >
           <Tag page="Contact" active={page[3]} />
         </div>
-      </Link>
-      <Link href="">
+      </a>
+      <a href="">
         <span className={styles.resume}>
           Resume
         </span>
-      </Link>
+      </a>
     </nav>
   );
 };
