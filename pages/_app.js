@@ -9,13 +9,17 @@ import SocialMedia from "../components/SocialMedia";
 
 function MyApp({ Component, pageProps }) {
   const [menuBtn, setMenuBtn] = useState(false);
+  const [statusPage, setStatusPage] = useState(0);
 
   const [isDocumentReady, setIsDocumentReady] = useState(false);
 
   useEffect(() => {
-    if (!isDocumentReady) {
-      setIsDocumentReady(true);
-    }
+
+    setTimeout(() => {
+      if (!isDocumentReady) {
+        setIsDocumentReady(true);
+      }
+    }, 7 * 1000);
   }, []);
 
   if (!isDocumentReady)
@@ -30,6 +34,8 @@ function MyApp({ Component, pageProps }) {
       value={{
         menuBtn,
         setMenuBtn,
+        statusPage,
+        setStatusPage
       }}
     >
       <Component {...pageProps} />

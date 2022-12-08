@@ -1,11 +1,15 @@
-import React from "react";
+import React, { useContext } from "react";
 
 import skills from "../../data/skills.json";
 
 import styles from "./styles.module.css";
 import page from "../../styles/pages.module.css"
+import GlobalVar from "../../context/GlobalVar";
 
 const Skills = () => {
+  const { setStatusPage } = useContext(GlobalVar);
+
+  setStatusPage(2);
   return (
     <div className={`${styles.skills} ${page.pages}`}>
       <div>

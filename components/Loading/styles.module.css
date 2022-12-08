@@ -8,13 +8,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #757171;
+  background-color: var(--color1);
 }
 
 .loading > div {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 5px;
+  animation: animation 7s linear infinite;
 }
 
 .loading > div div {
@@ -32,9 +33,9 @@
 @keyframes first {
   0%,
   100% {
-    width: 20px;
-    height: 20px;
-    background-color: var(--color1);
+    width: 30px;
+    height: 30px;
+    background-color: var(--color4);
   }
   50% {
     width: 10px;
@@ -51,8 +52,18 @@
     background-color: var(--color5);
   }
   50% {
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     background-color: var(--color2);
+  }
+}
+
+@keyframes animation {
+  from {
+    rotate: 0deg;
+  }
+
+  to {
+    rotate: 360deg;
   }
 }

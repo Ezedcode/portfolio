@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import Link from "next/Link";
 import GlobalVar from "../../context/GlobalVar";
 
@@ -6,21 +6,12 @@ import styles from "./styles.module.css";
 import Tag from "../Tag";
 
 const NavBar = () => {
-  const { menuBtn, setMenuBtn } = useContext(GlobalVar);
+  const { menuBtn, setMenuBtn, statusPage } = useContext(GlobalVar);
 
   const page = [true, false, false, false];
 
-  const locationUrl = window.location.href.toString();
-
-  const pagesUrl = [
-    "http://localhost:3000/",
-    "http://localhost:3000/skills",
-    "http://localhost:3000/project",
-    "http://localhost:3000/contact"
-  ];
-
-  pagesUrl.forEach((element, index) => {
-    if (element === locationUrl) {
+  page.forEach((element, index) => {
+    if ((index + 1) === statusPage) {
       page[index] = true;
     } else {
       page[index] = false;
@@ -64,6 +55,11 @@ const NavBar = () => {
         >
           <Tag page="Contact" active={page[3]} />
         </div>
+      </Link>
+      <Link href="">
+        <span className={styles.resume}>
+          Resume
+        </span>
       </Link>
     </nav>
   );

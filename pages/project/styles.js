@@ -3,12 +3,13 @@ import styled, { keyframes } from "styled-components";
 const Animation = keyframes`
   from {
     opacity: 0;
-    margin-top: 100%;
+    transform: translateY(-100%);
   }
 `;
 
 export const Project = styled.div`
-  animation: ${Animation} ${props => props.secund}s;
+  position: relative;
+  animation: ${Animation} ${props => props.secund}s linear;
 `;
 
 export const Container = styled.div`

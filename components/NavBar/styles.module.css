@@ -1,4 +1,5 @@
 .nav {
+  color: red;
   display: flex;
 }
 
@@ -12,6 +13,23 @@
 
 .nav a:hover {
   color: #0d9b9bb9;
+}
+
+.resume {
+  padding: 2vh;
+  color: var(--color1);
+  border-radius: 10px;
+  background-color: #1dc8e657;
+  border: 2px solid var(--color1);
+  font-size: 21px;
+  font-family: "Play", sans-serif;
+  transition: 0.5s;
+}
+
+.resume:hover {
+  color: var(--color0);
+  background-color: var(--color1);
+  transition: 0.5s;
 }
 
 @media screen and (max-width: 675px) {
@@ -38,5 +56,12 @@
     color: var(--color0);
     padding-left: 0px;
     margin-top: 3rem;
+  }
+
+  .resume {
+    padding: 20px 40px;
+    color: var(--color2);
+    background-color: #1dc8e657;
+    border: 3px solid var(--color2);
   }
 }
